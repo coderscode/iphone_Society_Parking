@@ -20,6 +20,7 @@
 		1803606D1FC7F82100A3CF76 /* dateicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1803606B1FC7F82000A3CF76 /* dateicon.png */; };
 		1803606E1FC7F82100A3CF76 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1803606C1FC7F82100A3CF76 /* logo.png */; };
 		180360701FC7FA4600A3CF76 /* icon_camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 1803606F1FC7FA4500A3CF76 /* icon_camera.png */; };
+		182043841FF3AFF500350EC0 /* V_DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182043831FF3AFF500350EC0 /* V_DetailsViewController.swift */; };
 		185103FC1FC579E4003329F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185103FB1FC579E4003329F5 /* AppDelegate.swift */; };
 		185103FE1FC579E4003329F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185103FD1FC579E4003329F5 /* ViewController.swift */; };
 		185104011FC579E4003329F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185103FF1FC579E4003329F5 /* Main.storyboard */; };
@@ -59,6 +60,7 @@
 		1803606B1FC7F82000A3CF76 /* dateicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dateicon.png; sourceTree = SOURCE_ROOT; };
 		1803606C1FC7F82100A3CF76 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = SOURCE_ROOT; };
 		1803606F1FC7FA4500A3CF76 /* icon_camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_camera.png; sourceTree = SOURCE_ROOT; };
+		182043831FF3AFF500350EC0 /* V_DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V_DetailsViewController.swift; sourceTree = "<group>"; };
 		185103F81FC579E4003329F5 /* Society Parking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Society Parking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		185103FB1FC579E4003329F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		185103FD1FC579E4003329F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				185104071FC579E4003329F5 /* Info.plist */,
 				18B3282D1FD6712400C7D6C0 /* Toast.swift */,
 				18C643E81FD7E9EE00DA7707 /* ProfileViewController.swift */,
+				182043831FF3AFF500350EC0 /* V_DetailsViewController.swift */,
 			);
 			path = "Society Parking";
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 			files = (
 				185103FE1FC579E4003329F5 /* ViewController.swift in Sources */,
 				18B3282E1FD6712400C7D6C0 /* Toast.swift in Sources */,
+				182043841FF3AFF500350EC0 /* V_DetailsViewController.swift in Sources */,
 				18C643E91FD7E9EE00DA7707 /* ProfileViewController.swift in Sources */,
 				185103FC1FC579E4003329F5 /* AppDelegate.swift in Sources */,
 				18B328301FD6AA0D00C7D6C0 /* DashboardViewController.swift in Sources */,

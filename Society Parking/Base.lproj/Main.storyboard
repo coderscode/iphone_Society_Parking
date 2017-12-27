@@ -395,6 +395,20 @@
                                 <rect key="frame" x="-73" y="8" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c61-VH-gT5">
+                                <rect key="frame" x="30" y="218" width="98" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="ahS-aP-ehI" kind="show" id="KOA-in-LLb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjM-2E-DoH">
+                                <rect key="frame" x="200" y="218" width="92" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="ahS-aP-ehI" kind="show" id="lVS-jW-6j9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="sNY-uQ-oue"/>
@@ -412,6 +426,68 @@
             </objects>
             <point key="canvasLocation" x="832.5" y="720.42253521126759"/>
         </scene>
+        <!--Details View Controller-->
+        <scene sceneID="WiN-XN-6Ow">
+            <objects>
+                <viewController restorationIdentifier="V_DetailsViewController" storyboardIdentifier="V_DetailsViewController" id="ahS-aP-ehI" customClass="V_DetailsViewController" customModule="Society_Parking" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="etr-lA-iMh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgapp.png" translatesAutoresizingMaskIntoConstraints="NO" id="dgM-wa-Pjd">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="Lbe-cJ-DMK"/>
+                                    <constraint firstAttribute="width" constant="240" id="OdT-B9-KOy"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4cp-oc-Uc4">
+                                <rect key="frame" x="0.0" y="42" width="320" height="526"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="BaB-eV-hQS"/>
+                                    <constraint firstAttribute="width" constant="2" id="CmW-5f-t77"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="NbC-Ce-po7">
+                                        <rect key="frame" x="0.0" y="28" width="240" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NbC-Ce-po7" id="OeV-e2-469">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="44.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7xD-4F-BQv">
+                                                    <rect key="frame" x="0.0" y="-28" width="319" height="100"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FbY-TV-mt3" firstAttribute="bottom" secondItem="dgM-wa-Pjd" secondAttribute="bottom" id="3vx-BK-AD7"/>
+                            <constraint firstItem="dgM-wa-Pjd" firstAttribute="leading" secondItem="FbY-TV-mt3" secondAttribute="leading" id="XZK-m1-Kcg"/>
+                            <constraint firstItem="4cp-oc-Uc4" firstAttribute="leading" secondItem="FbY-TV-mt3" secondAttribute="leading" id="a0M-Hl-5X6"/>
+                            <constraint firstItem="4cp-oc-Uc4" firstAttribute="top" secondItem="FbY-TV-mt3" secondAttribute="top" constant="22" id="g2E-je-jag"/>
+                            <constraint firstItem="FbY-TV-mt3" firstAttribute="trailing" secondItem="4cp-oc-Uc4" secondAttribute="trailing" id="rLT-dT-uXm"/>
+                            <constraint firstItem="FbY-TV-mt3" firstAttribute="trailing" secondItem="dgM-wa-Pjd" secondAttribute="trailing" id="sFb-GN-hT3"/>
+                            <constraint firstItem="FbY-TV-mt3" firstAttribute="bottom" secondItem="4cp-oc-Uc4" secondAttribute="bottom" id="tJv-Iw-GDZ"/>
+                            <constraint firstItem="dgM-wa-Pjd" firstAttribute="top" secondItem="FbY-TV-mt3" secondAttribute="top" id="wxk-PW-FpD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FbY-TV-mt3"/>
+                    </view>
+                    <connections>
+                        <outlet property="v_list_Tableview" destination="4cp-oc-Uc4" id="lbb-HZ-NEy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SCh-AO-KBa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1741.875" y="719.36619718309862"/>
+        </scene>
     </scenes>
     <resources>
         <image name="2_wh_s.png" width="248" height="248"/>
@@ -424,7 +500,7 @@
         <image name="icon_login.png" width="64" height="66"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4JG-2z-oSG"/>
+        <segue reference="KOA-in-LLb"/>
         <segue reference="1H1-17-xbM"/>
         <segue reference="Iuc-UG-2fc"/>
     </inferredMetricsTieBreakers>
